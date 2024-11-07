@@ -1,0 +1,110 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+select {
+  padding: 5px;
+  width: 120px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #337dc2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+span {
+  font-weight: bold;
+  color: #555;
+  padding: 5px;
+  background-color: #f4f4f4; /* Optional: To give it a background */
+}
+/* Style for the blurred row */
+.blurred {
+  filter: blur(5px);
+  background-color: #f0f0f0; /* Slight background color to indicate it's blurred */
+}
+
+/* Style for the "Send to SWIFT" button */
+button {
+  background-color: #042e5c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Disabled button style */
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Style for the "Submitted to SWIFT" button */
+button[disabled] {
+  background-color: #6c757d;
+  color: white;
+}
+/* Style for the disabled row */
+.disabled-row {
+  background-color: #f8f9fa;
+  color: #ccc; /* Change text color to make it look disabled */
+  pointer-events: none; /* Disable interactions */
+}
+
+/* Style for the "Send to SWIFT" button */
+button {
+  background-color: #0b3a6d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Disabled button style */
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Style for the "Submitted to SWIFT" button */
+button[disabled] {
+  background-color: #6c757d;
+  color: white;
+}

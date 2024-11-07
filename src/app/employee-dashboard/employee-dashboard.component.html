@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Employee Dashboard</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Transaction ID</th>
+        <th>Customer Name</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Status</th>
+        <th>SWIFT Code</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- No data yet, so this will be empty -->
+      <tr *ngIf="payments.length === 0">
+        <td colspan="4" class="empty-row">No payments available</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="logout()">Logout</button>
+</div>

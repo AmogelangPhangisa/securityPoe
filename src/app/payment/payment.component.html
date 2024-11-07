@@ -1,0 +1,70 @@
+<div class="container">
+  <h2>Payment Portal</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="amount">Amount</label>
+      <input
+        type="number"
+        [(ngModel)]="amount"
+        name="amount"
+        id="amount"
+        placeholder="Enter amount"
+        required
+        min="1"
+      />
+    </div>
+
+    <div>
+      <label for="currency">Currency</label>
+      <select [(ngModel)]="currency" name="currency" id="currency" required>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="ZAR">ZAR</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="provider">Payment Provider</label>
+      <input
+        type="text"
+        [(ngModel)]="provider"
+        name="provider"
+        id="provider"
+        value="SWIFT"
+        disabled
+      />
+    </div>
+
+    <div>
+      <label for="recipientAccount">Recipient Account Number</label>
+      <input
+        type="text"
+        [(ngModel)]="recipientAccount"
+        name="recipientAccount"
+        id="recipientAccount"
+        placeholder="Enter recipient account number"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="swiftCode">SWIFT Code</label>
+      <input
+        type="text"
+        [(ngModel)]="swiftCode"
+        name="swiftCode"
+        id="swiftCode"
+        placeholder="Enter SWIFT code"
+        required
+      />
+    </div>
+
+    <button type="submit">Submit Payment</button>
+  </form>
+
+  <p *ngIf="paymentStatus" class="status-message">{{ paymentStatus }}</p>
+
+  <!-- Logout Button -->
+  <button (click)="logout()" class="logout-btn">Logout</button>
+</div>

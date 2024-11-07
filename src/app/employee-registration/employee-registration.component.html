@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Employee Registration</h2>
+
+  <!-- Display success or error message -->
+  <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+  <!-- Registration Form -->
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      [(ngModel)]="firstname"
+      name="firstname"
+      placeholder="First Name"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="lastname"
+      name="lastname"
+      placeholder="Last Name"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="idNumber"
+      name="idNumber"
+      placeholder="ID Number"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="employeeNumber"
+      name="employeeNumber"
+      placeholder="Employee Number"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="contactDetails"
+      name="contactDetails"
+      placeholder="Contact Details"
+      required
+    />
+    <input
+      type="email"
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email Address"
+      required
+    />
+
+    <!-- Hidden fields for auto-generated username and password -->
+    <input type="hidden" [(ngModel)]="username" name="username" />
+    <input type="hidden" [(ngModel)]="password" name="password" />
+
+    <button type="submit">Register Employee</button>
+  </form>
+</div>

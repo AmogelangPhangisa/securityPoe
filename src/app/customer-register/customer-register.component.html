@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Customer Registration</h2>
+
+  <form (ngSubmit)="onRegister()">
+    <input
+      type="text"
+      [(ngModel)]="fullName"
+      name="fullName"
+      placeholder="First Name"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="fullName"
+      name="fullName"
+      placeholder="Last Name"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="idNumber"
+      name="idNumber"
+      placeholder="ID Number"
+      required
+    />
+    <input
+      type="text"
+      [(ngModel)]="accountNumber"
+      name="accountNumber"
+      placeholder="Account Number"
+      required
+    />
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      placeholder="Password"
+      required
+    />
+    <button type="submit">Register</button>
+  </form>
+</div>

@@ -1,0 +1,138 @@
+/* Ensure the body and html take full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Style for Payment Form */
+.container {
+  max-width: 1000px; /* Increase the max-width for laptops (can be adjusted) */
+  width: 100%; /* Allow the container to take full width of its parent */
+  margin: 40px auto; /* Center the container horizontally with top margin */
+  padding: 25px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Centered Heading */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: grid;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Input and Select Fields */
+input,
+select {
+  width: 90%;
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Input and Select Focus Effect */
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #031f9c; /* Green color for primary button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button take full width */
+}
+
+button[type="submit"]:hover {
+  background-color: #1e92df;
+}
+
+/* Status Message Styling */
+.status-message {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  padding: 12px;
+  background-color: #368ff4; /* Red color for logout */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%; /* Make button take full width */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #76aff0;
+}
+
+/* Disabled input styling for payment provider (readonly) */
+input:disabled {
+  background-color: #f9f9f9;
+  color: #ccc;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  button,
+  .logout-btn {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+/* Admin Login Form Container */
+.container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Admin Login Button */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #003366; /* Dark blue color */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #002244; /* Darker blue on hover */
+}
+
+/* Error message style */
+p.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
